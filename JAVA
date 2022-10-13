@@ -33,7 +33,7 @@ public class Main {
 
                 Hasil[i] = (int) (H[i] * C[i] * D[i] * P[i] * I[i] * 0.2);
 
-                System.out.print("Hasil Panen : " + Hasil[i]);
+                System.out.println("Hasil Panen : " + Hasil[i]);
 
             }
         }
