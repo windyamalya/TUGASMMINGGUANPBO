@@ -1,0 +1,41 @@
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int n,pilih;
+        System.out.println("Menghitung Hasil Panen Kopi");
+        System.out.print("Banyak Hasil Panen : ");
+        n = input.nextInt();
+        System.out.println("1. Robusta");
+        System.out.println("2.Arabika");
+
+        for (int i=0; i<n; i++){
+            System.out.println("Hasil Panen Kopi : " );
+            System.out.print("Pilih kopi yang akan dihitung (angka) :  ");
+            pilih = input.nextInt();
+            if(pilih == 1){
+                int H[] = new int[n];
+                int C[] = new int[n];
+                int D[] = new int[n];
+                int P[] = new int[n];
+                int I[] = new int [n];
+                int Hasil [] = new int[n];
+                System.out.print("Jumlah Tanaman per Hektar : ");
+                H[i]= input.nextInt();
+                System.out.print("Jumlah cabang produktif per tanaman :");
+                C[i] = input.nextInt();
+                System.out.print("Jumlah dompolan per cabang produktif :");
+                D[i] = input.nextInt();
+                System.out.print("Jumlah buah per dompolan :");
+                P[i] = input.nextInt();
+                System.out.print("Indeks biji :");
+                I[i] = input.nextInt();
+
+                Hasil[i] = (int) (H[i] * C[i] * D[i] * P[i] * I[i] * 0.2);
+
+                System.out.print("Hasil Panen : " + Hasil[i]);
+
+            }
+        }
+    }
+}
